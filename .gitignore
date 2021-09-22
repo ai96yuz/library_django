@@ -130,3 +130,9 @@ dmypy.json
 
 # PyCharm
 .idea
+
+# Heroku staticfiles
+/staticfiles
+
+# static
+/static
