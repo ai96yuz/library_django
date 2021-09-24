@@ -141,18 +141,11 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
-
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 try:
-    from .local_settings import  *
+    from .local_settings import *
 except ImportError:
     pass
 
